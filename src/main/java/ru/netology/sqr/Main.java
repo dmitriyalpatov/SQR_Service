@@ -2,13 +2,15 @@ package ru.netology.sqr;
 
 public class Main {
 
-    public static void main(String[] args, int square) {
+    public static int square;
+
+    public static void main(String[] args) {
 
         SQRService service = new SQRService();
 
-        int x = service.squaring(square);
+        int solutions = service.squaring(200, 300);
 
-        System.out.println(x);
+        System.out.println(solutions);
 
     }
 

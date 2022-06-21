@@ -7,10 +7,10 @@ public class SQR_ServiceTest {
     public void SquaringAtTheCorrectBoundaryValues() {
         SQRService service = new SQRService();
 
-        int square = 225;
-        int expected = 15;
+        int square =16;
+        int expected = 256;
 
-        int actual = service.squaring(square);
+        int actual = service.squaring(200,300);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -19,10 +19,10 @@ public class SQR_ServiceTest {
     public void SquaringBelowTheBoundaryValues() {
         SQRService service = new SQRService();
 
-        int square = 121;
-        int expected = 11;
+        int square =18;
+        int expected = 324;
 
-        int actual = service.squaring(square);
+        int actual = service.squaring(200,300);
 
         Assertions.assertEquals(expected, actual);
 
@@ -32,11 +32,10 @@ public class SQR_ServiceTest {
     @Test
     public void SquaringWhenExceedingTheBoundaryValues() {
         SQRService service = new SQRService();
+        int square =12;
+        int expected = 144;
 
-        int square = 625;
-        int expected = 25;
-
-        int actual = service.squaring(square);
+        int actual = service.squaring(160, 16);
 
         Assertions.assertEquals(expected, actual);
 

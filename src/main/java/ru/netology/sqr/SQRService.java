@@ -2,19 +2,26 @@ package ru.netology.sqr;
 
 public class SQRService {
 
-    public int squaring(int number) {
+    public int squaring(int lowerbound, int upperbound) {
 
         int count = 0;
 
+        int square = 16;
+
         for (int i = 10; i <= 99; i++) {
 
-            if (i*i >= number) {
+            square = i * i;
 
-                return i;
+            if (square >= 200 & square <= 300) {
+
+                count ++;
 
             }
         }
 
-        return 0;
+        return count;
     }
-}
+
+
+    }
+
