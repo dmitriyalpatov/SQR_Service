@@ -13,7 +13,7 @@ public class SQR_ServiceTest {
 
         int actual = service.squaring(50,200);
 
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual,c);
 
 
     }
@@ -29,7 +29,7 @@ public class SQR_ServiceTest {
 
         int actual = service.squaring(300,600);
 
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual, c);
 
 
 
@@ -46,7 +46,7 @@ public class SQR_ServiceTest {
 
         int actual = service.squaring(200, 300);
 
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual,c);
 
 
     }
